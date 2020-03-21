@@ -60,23 +60,35 @@ $(document).ready(function() {
 $(document).ready(function() {
   $.get("https://obscure-tundra-54269.herokuapp.com/bar-food", function(data) {
     var html = data.appetizers.map(function(item) {
-      return `<p>${item.name}</p>
-      <p>${item.price}</p>
-      <p>${item.description}</p>`
+      return `
+      <div class="item">
+      <p class="itemname">${item.name}</p>
+      <p class="itemprice">${item.price}</p>
+      <p class="itemdesc">${item.description}</p>
+      </div>
+      `
     })
     document.querySelector(".appetizer").innerHTML = html
 
     var html = data.entrees.map(function(item) {
-      return `<p>${item.name}</p>
-      <p>${item.price}</p>
-      <p>${item.description}</p>`
+      return `
+      <div class="item">
+      <p class="itemname">${item.name}</p>
+      <p class="itemprice">${item.price}</p>
+      <p class="itemdesc">${item.description}</p>
+      </div>
+      `
     })
     document.querySelector(".entrees").innerHTML = html
 
     var html = data.desserts.map(function(item) {
-      return `<p>${item.name}</p>
-      <p>${item.price}</p>
-      <p>${item.description}</p>`
+      return `
+      <div class="item">
+      <p class="itemname">${item.name}</p>
+      <p class="itemprice">${item.price}</p>
+      <p class="itemdesc">${item.description}</p>
+      </div>
+      `
     })
     document.querySelector(".dessert").innerHTML = html
   })

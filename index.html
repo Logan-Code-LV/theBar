@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -15,61 +17,67 @@
           <img src="./Assets/barLogoWhite.png" />
           <h5><a href="#mastercontainer">Home</a></h5>
           <h5><a href="#logomap">Locations</a></h5>
-          <h5><a href="#">Blog</a></h5>
           <h5><a href="#menu">Menu</a></h5>
           <h5><a href="#gallery">Photo Gallery</a></h5>
           <h5><a href="#box">Book Your Own Party</a></h5>
         </div>
       </div>
       <div class="section2">
-        <img
-          class="iconmonster1"
-          src="/Users/punchcode/Projects/thebarproject/Restaurant-website/Assets/iconmonstr-map-8-64.png"
-        />
+        <h1> Our Locations </h1>
         <div id="logomap" class="logomap">
           <div class="locationlogo">
             <img
-              src="Assets/maplogo.png"
+              src="Assets/Location.png"
             />
           </div>
-          <iframe
-            class="map"
-            width="600"
-            height="450"
-            frameborder="0"
-            style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?q=4340%20S.%20Grand%20Canyon%20Drive%20Las%20Vegas%2C%20NV&key=AIzaSyBgXMq-xQZrv2RoK-lqLDIG2QnZZwYfGJw"
-            allowfullscreen
-          ></iframe>
+          <br />
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=10PEgMtKoZhtbd8QIleN6D8mmzW3LtZKK" width="640" height="480"></iframe>
         </div>
       </div>
       <div class="section3"></div>
       <div class="section4">
-        <header>Our Menu</header>
+        <h1>Our Menu</h1>
         <div id="menu" class="menu">
-        <div class="appetizer"></div>
-          <div class="entrees"></div>
-        <div class="dessert"></div>
+
+          <div class="appcontainer">
+            <h3> Appetizers </h3>
+            <div class="appetizer">
+            </div>
+          </div>
+
+          <div class="entcontainer">
+            <h3> Entrees </h3>
+            <div class="entrees">
+            </div>
+          </div>
+
+          <div class="desscontainer">
+            <h3> Desserts </h3>
+            <div class="dessert">
+            </div>
+          </div>
+        
         </div>
       </div>
-      <div class="section5">
+      <h1 class="atmos"> Atmosphere </h1>
+      <div id="gallery" class="section5">
         
       </div>
       <div class="section6">
+        <h1 class="plan">
+          PLAN YOUR NEXT PARTY AT THE BAR
+        </h1>
         <div id="box">
           <div class="imgpartyplan">
             <img src="Assets/adult-alcohol-bar-bartender-274192 (2).jpg">
             <div class="form">
-              <header>
-                PLAN YOUR NEXT PARTY
-              </header>
-              <h6>The Bar is ready to book your private party room.   Fill out the form below to get started.</h6>
+              <h6>Host your next party or get together with us. Fill out the form below to get started.</h6>
               <form class="party">
-              <input type="text" placeholder="First Name*">
-              <input type="text" placeholder="Last Name*"><br>
-              <input type="text" placeholder="Phone Number*">
-              <input type="email" placeholder="Email*"><br>
-              <input type="date" placeholder="Date*">
+              <input type="text" placeholder="First Name">
+              <input type="text" placeholder="Last Name"><br>
+              <input type="text" placeholder="Phone Number">
+              <input type="email" placeholder="Email"><br>
+              <input type="date" placeholder="Date">
               <input type="number" placeholder="Number of Guests">
               </form>
               <button id="button">Book Now</button>
