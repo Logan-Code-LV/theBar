@@ -84,6 +84,8 @@ textarea {
 }
 body {
   background-image: url("Assets/stainless-steel-beer-dispenser-159291.jpg");
+  background-size: stretch;
+  background-repeat: no-repeat;
 }
 #mastercontainer {
   width: 1200px;
@@ -177,7 +179,9 @@ iframe {
   font-size: 48px;
 }
 
-.appcontainer h3, .entcontainer h3, .desscontainer h3 {
+.appcontainer h3,
+.entcontainer h3,
+.desscontainer h3 {
   text-align: center;
   font-family: "Roboto Slab", serif;
   font-size: 32px;
@@ -190,6 +194,7 @@ iframe {
 .item {
   border: 1px solid white;
   margin: 5px;
+  height: 190px;
 }
 
 h6 {
