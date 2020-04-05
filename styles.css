@@ -83,16 +83,17 @@ textarea {
   border-radius: 12px;
 }
 body {
-  background-image: url("Assets/stainless-steel-beer-dispenser-159291.jpg");
-  background-size: stretch;
+  background-image: url("./Assets/silhouette-photography-of-man-standing-beside-road-with-2403248.jpg");
+  height: 100%;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 #mastercontainer {
   width: 1200px;
   margin: auto;
   position: relative;
   background-color: black;
-  opacity: 0.8;
 }
 
 .section1 {
